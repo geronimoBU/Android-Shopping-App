@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/itemerror_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/priceerror_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginTop="117dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/priorityerror_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginTop="178dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quantityerror_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginTop="246dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/item_input"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:hint="@string/item"
+        android:inputType="textCapSentences|textAutoCorrect"
+        app:layout_constraintEnd_toStartOf="@+id/itemerror_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/price_input"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/price"
+        android:inputType="textCapSentences|textAutoCorrect"
+        app:layout_constraintEnd_toStartOf="@+id/priceerror_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_input" />
+
+    <EditText
+        android:id="@+id/priority_input"
+        android:layout_width="233dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/priority_integer"
+        android:inputType="textCapSentences|textAutoCorrect"
+        app:layout_constraintEnd_toStartOf="@+id/priorityerror_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_input" />
+
+    <EditText
+        android:id="@+id/quantity_input"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:hint="@string/quatity_integer"
+        android:inputType="textCapSentences|textAutoCorrect"
+        app:layout_constraintEnd_toStartOf="@+id/quantityerror_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priority_input" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_button"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginStart="94dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

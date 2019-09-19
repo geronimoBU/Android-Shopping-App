@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+    <string name="add">Add</string>
+    <string name="back">Back</string>
+    <string name="quatity_integer">Quatity (Integer)</string>
+    <string name="priority_integer">Priority (Integer)</string>
+    <string name="price">Price</string>
+    <string name="item">Item</string>
+</resources>
